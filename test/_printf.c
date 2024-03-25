@@ -43,8 +43,11 @@ int _printf(const char *format, ...)
 			else if (*format == 'd' || *format == 'i')
 			{								   // Si c'est un entier
 				int value = va_arg(args, int); // On récupère l'entier
-				printf("%d", value);		   // On l'affiche
-				count++;					   // On incrémente le nombre de caractères affichés
+				char buffer[20];			   // On crée un buffer pour afficher l'entier
+				int len = sprintf(buffer, "%d", value);
+				for (int i = 0; i < len; i++)
+					putchar(buffer[i]); // On affiche le buffer
+				count += len;			// On incrémente le nombre de caractères affichés
 			}
 		}
 		else
