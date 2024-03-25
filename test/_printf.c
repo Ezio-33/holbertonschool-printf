@@ -1,5 +1,5 @@
 #include <stdarg.h> // Permet de gérer les arguments variables (...)
-#include <stdio.h>	// Permet d'utiliser printf
+#include "printf.h"
 
 /**
  *  _printf() : Cette fonction permet de simuler le comportement de la fonction
