@@ -1,4 +1,4 @@
-#include <stdarg.h> // Permet de gérer les arguments variables (...)
+#include <stdarg.h>
 #include "printf.h"
 
 /**
@@ -8,58 +8,56 @@
  */
 int _printf(const char *format, ...)
 {
-	va_list args;			// Liste des arguments variables
-	va_start(args, format); // Initialisation de la fonction va_start
-
-	int count = 0; // Nombre de caractères affichés
-
+	va_list args;
+	va_start(args, format);
+	int count = 0;
 	while (*format != '\0')
-	{ // Tant que la chaîne n'est pas finie
+	{
 		if (*format == '%')
-		{			  // Si on a une séquence de caractères de remplacement
-			format++; // On passe au caractère suivant
+		{
+			format++;
 
 			if (*format == 'c')
-			{								// Si c'est un caractère
-				char c = va_arg(args, int); // On récupère le caractère
-				putchar(c);					// On l'affiche
-				count++;					// On incrémente le nombre de caractères affichés
+			{
+				char c = va_arg(args, int);
+				_putchar(c);
+				count++;
 			}
 			else if (*format == 's')
-			{									// Si c'est une chaîne de caractères
-				char *s = va_arg(args, char *); // On récupère la chaîne
+			{
+				char *s = va_arg(args, char *);
 				while (*s != '\0')
-				{				 // Tant que la chaîne n'est pas finie
-					putchar(*s); // On affiche un caractère
-					s++;		 // On passe au caractère suivant
-					count++;	 // On incrémente le nombre de caractères affichés
+				{
+					_putchar(*s);
+					s++;
+					count++;
 				}
 			}
 			else if (*format == '%')
-			{				  // Si c'est une séquence de caractères %
-				putchar('%'); // On affiche %
-				count++;	  // On incrémente le nombre de caractères affichés
+			{
+				_putchar('%');
+				count++;
 			}
 			else if (*format == 'd' || *format == 'i')
-			{								   // Si c'est un entier
-				int value = va_arg(args, int); // On récupère l'entier
-				char buffer[20];			   // On crée un buffer pour afficher l'entier
+			{
+				int value = va_arg(args, int);
+				char buffer[20];
 				int len = sprintf(buffer, "%d", value);
 				for (int i = 0; i < len; i++)
-					putchar(buffer[i]); // On affiche le buffer
-				count += len;			// On incrémente le nombre de caractères affichés
+					_putchar(buffer[i]);
+				count += len;
 			}
 		}
 		else
-		{					  // Si c'est juste un caractère normal
-			putchar(*format); // On l'affiche
-			count++;		  // On incrémente le nombre de caractères affichés
+		{
+			_putchar(*format);
+			count++;
 		}
 
-		format++; // On passe au caractère suivant
+		format++;
 	}
 
-	va_end(args); // On termine l'utilisation de la liste des arguments variables
+	va_end(args);
 
-	return (count); // On retourne le nombre de caractères affichés
+	return (count);
 }
