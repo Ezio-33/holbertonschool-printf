@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <limits.h>
+#include <unistd.h>
 
 /**
  * _putchar - writes the character c to stdout
@@ -13,17 +14,13 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-
-typedef struct prt
-{
-	char pr;
-	void (*f)(va_list);
-} prt_t
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
 
 int _printf(const char *format, ...);
+int _putchar(char c);
+int formatage_printf(va_list arg_l, char nextChar);
 
 #endif

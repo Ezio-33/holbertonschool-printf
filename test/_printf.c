@@ -26,7 +26,7 @@ int _printf(const char *format, ...)
 		{
 			char nextChar = *format++;
 
-			printedChars += handle_format(arg_l, nextChar);
+			printedChars += formatage_printf(arg_l, nextChar);
 		}
 		else
 			printedChars += _putchar(currentChar);

@@ -4,12 +4,12 @@
 #include <stdarg.h>
 #include "main.h"
 /**
- * handle_format - Gérer le formatage printf
+ * formatage_printf - Gérer le formatage printf
  * @arg_l: va_list de la fonction printf
  * @nextChar: Char correspondant au type de format
  * Return: Nombre de caractères affichés
  */
-int handle_format(va_list arg_l, char nextChar)
+int formatage_printf(va_list arg_l, char nextChar)
 {
 	int printedChars = 0;
 
