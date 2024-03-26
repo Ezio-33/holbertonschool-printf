@@ -18,7 +18,7 @@ int _printf(const char *format, ...);
 -----------------
 
 Flowcharts:
-![image]([https://github.com/Ezio-33/holbertonschool-printf/assets/86527262/c84849fb-1648-48f9-adfc-dd6e92adf32c](https://github.com/Ezio-33/holbertonschool-printf/blob/main/Flowcharts.png?raw=true)https://github.com/Ezio-33/holbertonschool-printf/blob/main/Flowcharts.png?raw=true  "Flowcharts")
+![image](https://github.com/Ezio-33/holbertonschool-printf/assets/86527262/a07f4b07-543d-40e0-bb36-d54d4cee9888 "Flowcharts")
 
 -----------------
 Auteurs
