@@ -1,6 +1,42 @@
 #include <stdlib.h>
 #include "main.h"
 /**
+ * _abs - Obtenir le nombre absolu d'un nombre
+ * @n: le nombre à inverser
+ * Return: le nombre
+ */
+
+int _abs(int n)
+{
+	if (n < 0)
+	{
+		n = n * -1;
+		return (n);
+	}
+	return (n);
+}
+/**
+ * *_reverse - Inverser un texte
+ * @s: Texte au verso
+ * @n: Longueur du tableau
+ * Return: La chaîne inversée
+ */
+
+char *_reverse(char *s, int n)
+{
+	int i, aux;
+
+	n--;
+	for (i = 0; i <= n; i++, n--)
+	{
+		aux = s[i];
+		s[i] = s[n];
+		s[n] = aux;
+	}
+	return (s);
+}
+
+/**
  * *_itoa - Convert int to string
  * @num: Number or num
  * @base: Base to convert
