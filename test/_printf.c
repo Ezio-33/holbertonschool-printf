@@ -1,7 +1,3 @@
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-#include <stdarg.h>
 #include "main.h"
 /**
  * _printf - Mettre en forme un texte et l'afficher
