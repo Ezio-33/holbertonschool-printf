@@ -38,12 +38,10 @@ int print_string(char *str_value)
 	return (i);
 }
 
-/****************** FUNCTIONS ******************/
-
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_string(char *str_value);
-int handle_format(va_list arg_l, char nextChar);
+int formatage_printf(va_list arg_l, char nextChar);
 int _abs(int n);
 char *_itoa(int num, int base);
 char *_reverse(char *s, int n);
