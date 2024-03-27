@@ -40,7 +40,8 @@ Vous pouvez utiliser un indicateur de format pour intégrer une variable dans vo
 |%s	| char *	| Afficher une chaîne de caractères |
 
 -----------------
-Exemples:
+
+Exemples d'utilisation de _printf:
 
 ```
 _printf("Exemples decimaux:[%d]\n", 42);
