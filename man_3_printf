@@ -31,6 +31,20 @@ COMPORTEMENT
 	- Si aucun spécificateur de format n'est trouvé, la fonction affiche le caractère courant tel quel.
 	- Si la chaîne de format est NULL ou contient uniquement le caractère '%', la fonction quitte avec un code d'erreur.
 
+COMMENT UTILISER LA FONCTION
+
+	Vous pouvez appeler la fonction _printf() :
+
+	```
+	#include "main.h"
+
+	int main() 
+	{
+    		_printf("texte:[format]\n", "se que l'on veux comme valeur");
+    		return (0);
+	}
+	```
+
 SPECIFICATEURS DE FORMAT
 	La table suivante répertorie les spécificateurs de format pris en charge par _printf() :
 
@@ -43,3 +57,20 @@ SPECIFICATEURS DE FORMAT
 	|     %i	| Affiche un entier signé décimal			  |
 	|     %%	| Affiche un caractère '%'				  |
 	+---------------+---------------------------------------------------------+
+
+EXEMPLES D'UTILISATION DE _PRINTF:
+
+	```
+	_printf("Exemples decimaux:[%d]\n", 42);
+	_printf("Exemples entiers:[%i]\n", 42);
+	_printf("Exemples char:[%c]\n", "holberton school sont les meilleurs");
+	```
+
+EXEMPLES DE SORTIE:
+
+	```
+	$ ./a.out
+	Exemples decimaux:[42]
+	Exemples entiers:[42]
+	Exemples char:[holberton school sont les meilleurs]
+	```
