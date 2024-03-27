@@ -1,58 +1,59 @@
-.SH NAME
-	_printf - Formatter et afficher un texte
+NAME
+	printf - Formatting and displaying text
 
-.SH SYNOPSIS
+SYNOPSIS
 	#include <stdio.h>
 
-	int _printf(const char *format, ...);
+	int printf(const char *format, ...);
 
-.SH DESCRIPTION
-	La fonction _printf() formate et affiche des données selon le format spécifié dans la chaîne de caractères format.
-	Elle accepte une liste d'arguments variables, permettant une grande flexibilité dans la création de formats de sortie.
+DESCRIPTION
+	The printf() function formats and displays text according to the format string specified in the character string format.
+	It accepts a list of arguments, which provides a great deal of flexibility in creating output formats.
 
-	Cette fonction prend en charge un ensemble de spécificateurs de format, introduits par le caractère '%', qui
-	contrôlent la façon dont les arguments sont formatés et affichés.
+	This function supports an set of format specifiers, introduced by the character '%', which control how
+	the arguments are formatted and displayed.
 
-	Pour une utilisation plus détaillée, consulter la documentation de la fonction printf(3) ou la spécification de la
-	fonction printf() de la bibliothèque standard C.
+	For more detailed information, consult the documentation of the function printf(3) or the
+	specification of the function printf() of the standard C library.
 
-.SH SPECIFICATEURS DE FORMAT
-	La table suivante répertorie les spécificateurs de format pris en charge par _printf() :
+FORMAT SPECIFIERS
+	The following table lists the format specifiers supported by printf() :
 
 	+---------------+---------------------------------------------------------+
-	| Spécificateur |               Description				  |
+	| Specifier     |               Description				  |
 	+---------------+---------------------------------------------------------+
-	|     %c	| Affiche un caractère					  |
-	|     %s	| Affiche une chaîne de caractères			  |
-	|     %d	| Affiche un entier signé décimal			  |
-	|     %i	| Affiche un entier signé décimal			  |
-	|     %%	| Affiche un caractère '%'				  |
+	|     %c	| Display a single character				  |
+	|     %s	| Display a string of characters			  |
+	|     %d	| Display a signed decimal integer			  |
+	|     %i	| Display a signed decimal integer			  |
+	|     %%	| Display a character '%'				  |
 	+---------------+---------------------------------------------------------+
 
-.SH EXEMPLES D'UTILISATION DE _PRINTF:
+EXAMPLES OF USAGE:
 
 
-	_printf("Exemples decimaux:[%d]\n", 42);
-	_printf("Exemples entiers:[%i]\n", 42);
-	_printf("Exemples char:[%c]\n", "holberton school sont les meilleurs");
+	printf("Examples decimals:[%d]\n", 42);
+	printf("Examples integers:[%i]\n", 42);
+	printf("Examples char:[%c]\n", "holberton school are the best");
 
-
-.SH EXEMPLES DE SORTIE:
+EXAMPLE OUTPUT:
 
 	$ ./a.out
-	Exemples decimaux:[42]
-	Exemples entiers:[42]
-	Exemples char:[holberton school sont les meilleurs]
+	Examples decimals:[42]
+	Examples integers:[42]
+	Examples char:[holberton school are the best]
 
-.SH RETURN VALUE
-	La fonction _printf() renvoie le nombre de caractères affichés en cas de succès. En cas d'erreur, elle renvoie -1.
+RETURN VALUE
+	The printf() function returns the number of characters displayed if successful. In case of an error, it returns -1.
 
-.SH ERRORS
-	Si la chaîne de format est NULL ou contient uniquement le caractère '%', la fonction quitte avec un code d'erreur.
+ERRORS
+	If the format string is NULL or contains only the character '%', the function quits with an error code.
 
-.SH Auteurs
+AUTHORS
  VERSCHUEREN Samuel, GLE Rosario
-.SH VOIR AUSSI
-man printf
+SEE ALSO
+	man printf
 
 Source code available at: <https://github.com/Ezio-33/holbertonschool-printf/tree/main>
+
+
