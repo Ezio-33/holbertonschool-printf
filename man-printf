@@ -8,4 +8,3 @@ then
 else
     echo "Le fichier $MAN_FILE n'existe pas."
 fi
-
