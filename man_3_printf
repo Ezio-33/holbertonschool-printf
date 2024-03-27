@@ -1,0 +1,25 @@
+NOM
+
+	_printf - Mettre en forme un texte et l'afficher
+
+SYNOPSIS
+
+	#include "main.h"
+
+	int _printf(const char *format, ...);
+
+DESCRIPTION
+
+	La fonction _printf() formate et affiche des données selon le format spécifié dans la chaîne de caractères format.
+
+	Le format est une chaîne de caractères qui peut conten des caractères ordinaires et des spécifications de format.
+
+	Les spécifications de format sont introduites par le caractère % et suivies de caractères qui déterminent le type et
+	la taille des données à afficher. Les spécifications de format ont la forme :
+	%type
+
+	La fonction _printf() renvoie le nombre de caractères affichés.
+
+VALEUR DE RETOUR
+
+	La  fonction _printf() renvoie le nombre de caractères affichés en cas de suès et -1 en cas d'erreu.
