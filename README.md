@@ -2,7 +2,7 @@
 -------
 Description:
 -------
-Ce projet d'équipe fait partie du programme holberton schol où le but est de reproduire la fonction prinf() de la biblioèque standard C.
+Ce projet d'équipe fait partie du programme holberton school où le but est de reproduire la fonction prinf() de la bibliotèque standard C.
 
 Ce que l'on a appris avec ce projet :
 
