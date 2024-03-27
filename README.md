@@ -2,14 +2,14 @@
 -------
 Description:
 -------
-Ce projet d'√©©quipe fait partie du programme holberton schol ouπ√ le but est de reproduire la fonction prin() de la biblio√®®que standard C.
+Ce projet d'√©quipe fait partie du programme holberton schol o√π le but est de reproduire la fonction prinf() de la biblio√®que standard C.
 
 Ce que l'on a appris avec ce projet :
 
-- [x] Comment utiliser git en √©©quipe
-- [x] Appliquer les fonctions variadiques √ un grand projet
-- [x] Les complexit√©©s de printf
-- [x] G√©©rer un grand nombre de fichiers et trouver un bon flux de travail
+- [x] Comment utiliser git en √©quipe
+- [x] Appliquer les fonctions variadiques √† un grand projet
+- [x] Les complexit√©s de printf
+- [x] G√©rer un grand nombre de fichiers et trouver un bon flux de travail
 
 -----------------
 # Prototype
