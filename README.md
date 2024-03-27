@@ -2,7 +2,7 @@
 -------
 Description:
 -------
-Ce projet d'équipe fait partie du programme holberton school ou le but est de  reproduit la fonction printf() de la bibliothèque standard C.
+Ce projet d'équipe fait partie du programme holberton schoo où� le but est de reproduire la fonction printf() de la bibliothèque standard C.
 
 Ce que l'on a appris avec ce projet :
 
@@ -22,4 +22,4 @@ Flowcharts:
 
 -----------------
 Auteurs
-VERSCHUEREN Samuel
+VERSCHUEREN Samuel, GLE Rosario
