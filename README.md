@@ -34,12 +34,12 @@ Vous pouvez utiliser un indicateur de format pour intégrer une variable dans vo
 
 |Format	| Type	| Description |
 | --- | --- | --- |
-|%d	| int	| Afficher un nombre décimal |
-|%i	| int	| Afficher un nombre décimal |
-|%c	| int/char	| Afficher un char OU convertir un int en sa valeur char |
-|%s	| char *	| Afficher une chaîne de caractères |
+|<font color="white">%d</font>	| <font color="white">int</font>	| <font color="white">Afficher un nombre décimal</font> |
+|<font color="white">%i</font>	| <font color="white">int</font>	| <font color="white">Afficher un nombre décimal</font> |
+|<font color="white">%c</font>	| <font color="white">int/char</font>	| <font color="white">Afficher un char OU convertir un int en sa valeur char</font> |
+|<font color="white">%s</font>	| <font color="white">char *</font>	| <font color="white">Afficher une chaîne de caractères</font> |
 
------------------
+.-----------------
 Exemples:
 
 ```
