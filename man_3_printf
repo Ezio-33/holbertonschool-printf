@@ -24,8 +24,8 @@ FORMAT SPECIFIERS
 	+---------------+---------------------------------------------------------+
 	|     %c	| Display a single character				  |
 	|     %s	| Display a string of characters			  |
-	|     %d	| Display a signed decimal integer			  |
-	|     %i	| Display a signed decimal integer			  |
+	|     %d	| Display a signed decimal 				  |
+	|     %i	| Display a signed integer				  |
 	|     %%	| Display a character '%'				  |
 	+---------------+---------------------------------------------------------+
 
