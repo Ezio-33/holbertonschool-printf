@@ -33,6 +33,10 @@ int formatage_printf(va_list arg_l, char nextChar)
 			text = "(null)";
 		printedChars += print_string(text);
 	}
+	else if (nextChar == 'b')
+	{
+		printedChars += print_string(_utoa(va_arg(arg_l, unsigned int), 2, 0));
+	}
 	else
 		printedChars += (_putchar('%') + _putchar(nextChar));
 	va_end(arg_l);
