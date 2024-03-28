@@ -37,6 +37,10 @@ int formatage_printf(va_list arg_l, char nextChar)
 	{
 		printedChars += print_string(_utoa(va_arg(arg_l, unsigned int), 2, 0));
 	}
+	else if (nextChar == 'u')
+	{
+		printedChars += print_string(_utoa(va_arg(arg_l, unsigned int), 10, 0));
+	}
 	else
 		printedChars += (_putchar('%') + _putchar(nextChar));
 	va_end(arg_l);
