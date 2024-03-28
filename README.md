@@ -35,7 +35,7 @@ Vous pouvez utiliser un indicateur de format pour intégrer une variable dans vo
 |Format	| Type	| Description |
 | --- | --- | --- |
 |%d	| int	| Afficher un nombre décimal |
-|%i	| int	| Afficher un nombre décimal |
+|%i	| int	| Afficher un nombre entier |
 |%c	| int/char	| Afficher un char OU convertir un int en sa valeur char |
 |%s	| char *	| Afficher une chaîne de caractères |
 
