@@ -47,8 +47,7 @@ int formatage_printf(va_list arg_l, char nextChar)
 	}
 	else if (nextChar == 'x' || nextChar == 'X')
 	{
-		int isupper = (nextChar == 'X') ? 1 : 0;
-		printedChars += print_string(_utoa(va_arg(arg_l, unsigned int), 16, isupper));
+		printedChars += print_string(_utoa(va_arg(arg_l, unsigned int), 16, isupper(nextChar) ? 0 : 1));
 	}
 	else
 		printedChars += (_putchar('%') + _putchar(nextChar));
