@@ -59,7 +59,7 @@ Exemples char:[holberton school sont les meilleurs]
 ```
 -----------------
 
-Flowcharts:
+Flowcharts :
 ![image](https://github.com/Ezio-33/holbertonschool-printf/assets/86527262/a07f4b07-543d-40e0-bb36-d54d4cee9888 "Flowcharts")
 
 -----------------
